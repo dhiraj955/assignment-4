@@ -12,6 +12,7 @@ let x = document.getElementById("menu");
         menuBtn.style.display = "block";
         closeBtn.style.display = "none";
       }
+      // hamburger toggle mode
       const menu = document.getElementById("hiddenmenu");
       function openmenu(){
           menu.classList.toggle("navwrappershow")
@@ -27,14 +28,14 @@ let x = document.getElementById("menu");
         document.getElementById(tabName).classList.add("active");
         event.target.classList.add("active");
       }
-
+// login 
       function showModal() {
         document.querySelector(".popup").classList.add("popupactive");
       }
       function closeModal() {
         document.querySelector(".popup").classList.remove("popupactive");
       }
-
+// data mapping for product card
       const products = [
         {
           title: "Classic White Tee",

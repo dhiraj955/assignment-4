@@ -3,6 +3,7 @@
 
 :root{
     --text-color: #f5f7f9;
+    --button-background-color: #0084D6;
     /* --background-color: #f5f7f9; */
 
 }
@@ -387,7 +388,7 @@ section{
     transition: all 200ms ease-in-out;
 }
 .paraheading:hover{
-    color: #0084D6;
+    color: var(--button-background-color);
     transition: all 200ms ease-in-out;
 }
 /* footer section */
@@ -460,7 +461,7 @@ input[type="email"] {
 .footer-subscribe button{
     padding: 16px 28px;
     border: none;
-    background: #0084D6;
+    background: var(--button-background-color);
     color: white;
     font-size: 13px;
     font-weight: bold;
