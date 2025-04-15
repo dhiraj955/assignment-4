@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Dhiraj Mehta">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="nav.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Ecommerce Website</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar">
+        <div class="nav-section">
+          <div class="logo">
+            <img src="logo1@2x-free-img.png" alt="DNK" />
+          </div>
+          <div class="navwrapper" id="hiddenmenu">
+            <div class="navlist">
+              <ul>
+                <li><a href="everything.html">EVERYTHING</a></li>
+                <li><a href="women.html">WOMEN</a></li>
+                <li><a href="men.html">MEN</a></li>
+                <li><a href="accessories.html">ACCESSORIES</a></li>
+              </ul>
+            </div>
+
+            <div class="navmenu">
+              <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li class="contact"><a href="contact.html">CONTACT</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="menu-icons">
+            <div class="icon">
+              <div><i class="fa-solid fa-cart-shopping"></i></div>
+              <div><i class="fa-solid fa-user"></i></div>
+              <div class="cart-number">0</div>
+            </div>
+            <div class="hammenu" onclick="openmenu()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+          <!-- <div class="icon">
+              <div><i class="fa-solid fa-cart-shopping"></i></div>
+              <div><i class="fa-solid fa-user"></i></div>
+            </div>
+            <div class="hammenu" onclick="openmenu()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+           -->
+        </div>
+      </div>
+      <section>
+        <div class="hero">
+          <h1 class="heading">Raining Offers For Hot Summer!</h1>
+          <p class="para">25%Off On All Products</p>
+          <div class="btn">
+            <button class="shop-btn">SHOP NOW</button>
+            <button class="find-btn">FIND MORE</button>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="second-section">
+        <div class="bg-container">
+          <div class="bg-head">
+            <h2>20% Off On Tank Tops</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+              ipsam?
+            </p>
+            <button class="shop-btn">SHOP NOW</button>
+          </div>
+        </div>
+        <div class="bg-latest">
+          <div class="bg-head">
+            <h2>20% Off On Tank Tops</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+              ipsam?
+            </p>
+            <button class="shop-btn">SHOP NOW</button>
+          </div>
+        </div>
+        <div class="bg-lets">
+          <div class="bg-head">
+            <h2>20% Off On Tank Tops</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+              ipsam?
+            </p>
+            <button class="shop-btn">SHOP NOW</button>
+          </div>
+        </div>
+      </section>
+      <section class="third-section">
+        <div class="third-part">
+          <h1>Featured Products</h1>
+          <section class="product-section" id="product-section"></section>
+          <div class="fourth-section">
+            <div class="fourth-content">
+              <h2>Limited Time Offer</h2>
+              <h1 class="fourth-heading">Special Edition</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur cum magnam, debitis voluptates, sunt mollitia
+                laudantium nulla quasi cupiditate, tenetur et iure officia magni
+                unde.
+              </p>
+              <h2 class="h2">
+                Buy This T-shirt At 20% Discount,Use Code OFF20
+              </h2>
+              <button class="shop-btn">SHOP NOW</button>
+            </div>
+          </div>
+          <section class="second_section">
+            <div class="container">
+              <div class="service">
+                <div class="service_section">
+                  <div class="border">
+                    <div class="service_icon">
+                      <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+                    <h2 class="service_heading">Worldwide Shipping</h2>
+                    <p class="service_para">
+                      We ensure every order is delivered on time, always.
+                    </p>
+                  </div>
+                </div>
+                <div class="service_section">
+                  <div class="border">
+                    <div class="service_icon">
+                      <svg
+                        class="icon_list"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 8h6m-5 0a3 3 0 110 6H9l3 3m-3-6h6m6 1a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                    </div>
+                    <h2 class="service_heading">Best Quality</h2>
+                    <p class="service_para">
+                      Your payments are encrypted and 100% safe with us.
+                    </p>
+                  </div>
+                </div>
+                <div class="service_section">
+                  <div class="border">
+                    <div class="service_icon">
+                      <i class="icon_list fas fa-truck"></i>
+                    </div>
+                    <h2 class="service_heading">Best Offers</h2>
+                    <p class="service_para">
+                      Enjoy fast and free shipping on all your purchases today.
+                    </p>
+                  </div>
+                </div>
+                <div class="service_section">
+                  <div class="border">
+                    <div class="service_icon">
+                      <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <h2 class="service_heading">Secure Payment</h2>
+                    <p class="service_para">
+                      Enjoy fast and free shipping on all your purchases today.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <div class="paragraph">
+        <h1 class="paraheading">
+          SALE UPTO 70% OFF FOR ALL CLOTHES & FASHION ITEMS, ON ALL BRANDS
+        </h1>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-first">
+          <div class="footer-logo">
+            <img src="logo@2x-free-img.png" alt="" />
+            <p>The best look anytime, anywhere</p>
+          </div>
+          <div class="footer-her">
+            <h2>For Her</h2>
+            <div>
+              <ul>
+                <li><a href="">Women Jeans</a></li>
+                <li><a href="">Tops and Shirts</a></li>
+                <li><a href="">Women jackets</a></li>
+                <li><a href="">Heels and flats</a></li>
+                <li><a href="">Women Accerssories</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-him">
+            <h2>For Him</h2>
+            <ul>
+              <li><a href="" class="menshirts">Men Jeans</a></li>
+              <li><a href="">Men Shirts</a></li>
+              <li><a href="">Men Shoes</a></li>
+              <li><a href="">Men Accessories</a></li>
+              <li><a href="">Men Jacket</a></li>
+            </ul>
+          </div>
+          <div class="footer-subscribe">
+            <h2>Subscribe</h2>
+            <input type="email" name="email" placeholder="Your email address" />
+            <button>SUBSCRIBE</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>Copyright 2025 Brandstore, Powered by Brandstore</p>
+        <ul>
+          <li>
+            <a href=""><i class="fa-brands fa-facebook-f amargin"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-google"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

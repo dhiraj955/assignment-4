@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="nav.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Ecommerce Website</title>
+    <style>
+      .navbar {
+        width: 100%;
+        height: 102px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      @media only screen and (max-width: 770px){
+    .navbar{
+        height: 60px;
+    }
+   
+   
+} 
+      .navbar ul li a {
+        color: black;
+      }
+      .icon i{
+        color: black;
+      }
+      .bg-color {
+        background: #f5f7f9;
+      }
+
+      .product-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 1000px;
+        margin-top: 100px;
+        margin: auto;
+      }
+
+      .product-image img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .product-info {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .price {
+        font-size: 24px;
+        color: #e60023;
+      }
+
+      .stars {
+        font-size: 16px;
+        color: #ff9900;
+      }
+
+      .selectors {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin: 10px 0;
+      }
+
+      .size-select,
+      .color-select {
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        font-weight: bold;
+        margin-bottom: 6px;
+      }
+
+      select {
+        padding: 10px;
+        font-size: 16px;
+        width: 150px;
+      }
+
+      .add-to-cart {
+        background: #0084d6;
+        color: white;
+        border: none;
+        padding: 14px;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        width: fit-content;
+      }
+
+      .tabs {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      .tab-btn {
+        padding: 10px 20px;
+        border: 1px solid #ddd;
+        background: white;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .tab-btn.active {
+        background: #0084d6;
+        color: white;
+        border: none;
+      }
+
+      .tab-content {
+        display: none;
+        margin-top: 15px;
+        font-size: 15px;
+        line-height: 1.6;
+      }
+
+      .tab-content.active {
+        display: block;
+      }
+
+      @media (min-width: 768px) {
+        .product-container {
+          flex-direction: row;
+          gap: 40px;
+        }
+
+        .product-image,
+        .product-info {
+          flex: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <header> -->
+
+    <div class="navbar">
+      <div class="nav-section">
+        <div class="logo">
+          <img src="logo@2x-free-img.png" alt="DNK" />
+        </div>
+        <div class="navwrapper" id="hiddenmenu">
+          <div class="navlist">
+            <ul>
+              <li><a href="">EveryThing</a></li>
+              <li><a href="">Women</a></li>
+              <li><a href="">Men</a></li>
+              <li><a href="">Accessories</a></li>
+            </ul>
+          </div>
+
+          <div class="navmenu">
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li class="contact"><a href="contact.html">contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="menu-icons">
+          <div class="icon">
+            <div><i class="fa-solid fa-cart-shopping"></i></div>
+            <div><i class="fa-solid fa-user"></i></div>
+          </div>
+          <div class="hammenu" onclick="openmenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+        <!-- <div class="icon">
+                <div><i class="fa-solid fa-cart-shopping"></i></div>
+                <div><i class="fa-solid fa-user"></i></div>
+              </div>
+              <div class="hammenu" onclick="openmenu()">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+             -->
+      </div>
+    </div>
+
+    <main>
+      <div class="bg-color">
+        <div class="pd-top">
+            <section class="product-section" id="product-section" >
+
+                
+            </section>
+        </div>
+      </div>
+
+      <div class="paragraph">
+        <h1 class="paraheading">
+          SALE UPTO 70% OFF FOR ALL CLOTHES & FASHION ITEMS, ON ALL BRANDS
+        </h1>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-first">
+          <div class="footer-logo">
+            <img src="logo@2x-free-img.png" alt="" />
+            <p>The best look anytime, anywhere</p>
+          </div>
+          <div class="footer-her">
+            <h2>For Her</h2>
+            <div>
+              <ul>
+                <li><a href="">Women Jeans</a></li>
+                <li><a href="">Tops and Shirts</a></li>
+                <li><a href="">Women jackets</a></li>
+                <li><a href="">Heels and flats</a></li>
+                <li><a href="">Women Accerssories</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-him">
+            <h2>For Him</h2>
+            <ul>
+              <li><a href="" class="menshirts">Men Jeans</a></li>
+              <li><a href="">Men Shirts</a></li>
+              <li><a href="">Men Shoes</a></li>
+              <li><a href="">Men Accessories</a></li>
+              <li><a href="">Men Jacket</a></li>
+            </ul>
+          </div>
+          <div class="footer-subscribe">
+            <h2>Subscribe</h2>
+            <input type="email" name="email" placeholder="Your email address" />
+            <button>SUBSCRIBE</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>Copyright 2025 Brandstore, Powered by Brandstore</p>
+        <ul>
+          <li>
+            <a href=""><i class="fa-brands fa-facebook-f amargin"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-google"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

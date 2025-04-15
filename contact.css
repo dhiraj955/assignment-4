@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: Lato, sans-serif;
+}
+header{
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("banner-06.jpg");
+  background-repeat: no-repeat;
+  background-position: center center ;
+  background-size: cover;
+  
+    height: 30vh;
+}
+
+.about-heading h1{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 80px;
+}
+.about-section{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+}
+.about-header, .about-img{
+    flex: 1;
+}
+.about-header{
+    text-align: left;
+}
+.about-header h2{
+    font-size: 25px;
+}
+.about-header p{
+    font-size: 14px;
+    line-height: 1.5rem;
+    margin-bottom: 50px;
+}
+.about-section {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column; /* Mobile: stacked */
+    gap: 20px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  
+  /* Equal width for both sides */
+  .about-header,
+  .about-img {
+    flex: 1;
+  }
+  
+  /* Input and textarea styling */
+  .about-img{
+    background-color: white;
+  }
+  .input-section{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  input{
+    background-color: white;
+    width: 70%;
+    margin-left: 12%;
+    font-size: 15px;
+    padding: 5px 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  
+}
+input[type="email"] {
+    /* Your styles here */
+    width: 73%;
+    padding: 5px ;
+    padding-left: 16px;
+    /* padding-right: 28px; */
+    border: 1px solid #ccc;
+  }
+textarea{
+    background-color: white;
+    width: 70%;
+   
+    margin-left: 12%;
+    font-size: 15px;
+    padding: 16px 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+.about-header h3{
+    font-size: 13px;
+}
+button{
+    background-color: #0084D6;
+    font-size: 15px;
+    padding: 10px 18px;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    margin: auto;
+    border: none;
+    transition: all .02s ease-in-out;
+}
+button:hover{
+    opacity:0.8;
+    transition: all .02s ease-in-out;
+}
+    
+    
+
+.team{
+    background: #f5f7f9;
+    border-bottom: 1px solid rgb(205, 201, 201);
+}
+.team-section{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.team-section h2{
+    font-size: 18px;
+    margin-top: 100px;
+}
+
+.team-section h1{
+    font-size: 25px;
+    margin-bottom: 100px;
+}
+.team-section p{
+    font-size: 14px;
+    line-height: 1.5rem;
+}
+
+.card-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 100px;
+    /* padding-bottom: 50px; */
+    
+  }
+
+  .card {
+    width: 100%;
+    max-width: 300px;
+    background: white;
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .card img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  .card h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+
+  .card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5rem;
+  }
+  .card h4{
+    font-size: 16px;
+    color: #0084D6;
+  }
+
+@media only screen and (min-width: 992px) {
+    header{
+        height: 70vh;
+    }
+    .about-heading h1{
+        font-size: 66px;
+        margin-top: 200px;
+    }
+    .about-section{
+        flex-direction: row;
+        gap: 50px;
+    }
+    .about-header h3{
+        font-size: 16px;
+    }
+    .about-header h2{
+        font-size: 42px;
+    }
+    .about-header p{
+        font-size: 16px;
+    }
+    .about-img img {
+        width: 555px;
+        height: 300px;
+    }
+    .team-section{
+        width: 50%;
+    }
+    .card-grid {
+        width: 80%;
+        margin: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .card {
+        width: 250px;
+      }
+      .card h3 {
+        font-size: 26px;
+        margin-bottom: 5px;
+        color: #333;
+      }
+    
+      .card p {
+        font-size: 16px;
+        color: #666;
+      }
+      .card h4{
+        font-size: 18px;
+      }
+      input[type="email"] {
+        /* Your styles here */
+        width: 100%;
+        padding: 5px ;
+        padding-left: 16px;
+        padding-right: 28px;
+        border: 1px solid #ccc;
+      }
+      .footer-subscribe h2{
+        padding-left: 30px;
+        margin-top: 60px;
+      }
+    
+}
