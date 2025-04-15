@@ -28,6 +28,13 @@ let x = document.getElementById("menu");
         event.target.classList.add("active");
       }
 
+      function showModal() {
+        document.querySelector(".popup").classList.add("popupactive");
+      }
+      function closeModal() {
+        document.querySelector(".popup").classList.remove("popupactive");
+      }
+
       const products = [
         {
           title: "Classic White Tee",
